@@ -68,7 +68,7 @@ namespace FamilyTreeBuilder
         {
             if (e.MiddleButton == MouseButtonState.Pressed)
             {
-                cameraPosition = new Point(e.GetPosition(this).X - oldPosition.X, e.GetPosition(this).Y - oldPosition.Y);
+                cameraPosition = new Point(e.GetPosition(this).X - oldPosition.X, e.GetPosition(this).Y - oldPosition.Y);//считать от себя?
                 InvalidateVisual();
             }
         }
